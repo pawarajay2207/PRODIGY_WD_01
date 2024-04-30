@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(Asset/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: #0000;
+    min-height: 200vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 12px 20px;
+    z-index: 100000;
+    background-color: #ab0769;
+}
+
+header.sticky{
+    padding: 5px 70px;
+    background: #211d14;
+    color:rgb(235, 225, 225);
+}
+.logo img {
+    position: relative;
+    height: 60px;
+    width: auto;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ header ul li {
+    position: relative;
+    list-style: none;
+}
+
+ header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: yellow;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s ;
+}
+
+ header ul li a:hover {
+    color: #fd5e53;
+}
+
+header.sticky.logo,
+header.sticky ul li a{
+    color: #fff;
+}
+button {
+    background:rgba(0,0,0,0.2);
+    border:2px solid;
+    border-radius: 50px;
+    color: #fd5e53;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: yellow;
+}
+
+button:hover {
+    background-color: #fd5e53;
+    color: #fff;
+}
+
+button:hover a {
+    color: #fff;
+}
+
+.library-intro {
+    position: relative;
+    margin-top: 88px;
+    padding: 3%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-image: url(https://dottech.org/wp-content/uploads/2013/09/digital-book-768x459.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.library {
+    padding: 2rem;
+}
+
+.featured-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 50px));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    box-shadow: #fd5e53;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.book {
+    background:rgb(75, 109, 6);
+    padding: 1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.more-btn {
+    margin-top: 20%;
+    width: 50%;
+    background-color: rgba(0,0,0,0.2);
+    border: 2px solid;
+    border-radius: 50px;
+    color: #fd5e53;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-btn:hover {
+    background-color: #fd5e53;
+    color: white;
+}
+
+
+
+.contact {
+    text-align: right;
+    padding: 2rem 0;
+    justify-content: space-between;
+    
+
+.social-icons a {
+    font-size: 50px;
+    margin: 0 30px ;
+    transition: color 0.3s ease;
+    background-color:  #e4f4bf;
+    border-radius: 20px;
+}
+}
+
+.social-icons a:hover {
+    color: #fd5e53;
+}
+
+footer {
+    background:rgba(19, 19, 19, 0.5);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 100px;
+    margin-bottom: 0%;
+}
